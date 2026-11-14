@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Local First Contracts – slides</title>
+<style>
+  :root{--dark:#1f3a4d;--teal:#2a7f8e;--orange:#e07a1f;--light:#eef3f5;--ink:#1d2430;--mut:#55606b}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#222;font-family:Calibri,Arial,sans-serif}
+  .slide{width:min(100vw,calc(100vh*16/9));aspect-ratio:16/9;margin:0 auto;background:#fff;color:var(--ink);padding:4.5vw 5vw;display:none;position:relative;font-size:min(1.9vw,3.4vh)}
+  .slide.on{display:block}
+  .dark{background:var(--dark);color:#e6eef2}
+  h1,h2{font-family:Cambria,Georgia,serif;margin:0}
+  h2{font-size:2.1em;color:var(--dark);margin-bottom:.6em}
+  .dark h2{color:#fff}
+  .cards{display:flex;gap:2%;height:62%}
+  .card{flex:1;background:var(--light);border-radius:.6em;padding:1em 1.1em}
+  .card.d{background:var(--dark);color:#e6eef2}.card.d h3{color:#fff}
+  .card h3{font-family:Cambria,Georgia,serif;margin:0 0 .5em;color:var(--dark);font-size:1.15em}
+  .card p{margin:.2em 0 .7em;font-size:.82em;line-height:1.35}
+  .foot{position:absolute;left:5vw;right:5vw;bottom:2.5vw;font-size:.55em;color:var(--mut)}
+  .steps{display:flex;gap:1.5%;margin-top:1em}
+  .step{flex:1;text-align:center}
+  .num{width:2.4em;height:2.4em;border-radius:50%;background:var(--teal);color:#fff;font:700 1.2em Cambria,serif;display:flex;align-items:center;justify-content:center;margin:0 auto .6em}
+  .step:last-child .num{background:var(--orange)}
+  .step b{font-family:Cambria,serif;font-size:1.05em;color:var(--dark);display:block;margin-bottom:.3em}
+  .step span{font-size:.8em}
+  .layer{display:flex;gap:2%;align-items:center;margin-bottom:.9em}
+  .layer b{flex:0 0 18%;padding:.8em;border-radius:.5em;color:#fff;text-align:center;font-family:Cambria,serif}
+  .layer span{font-size:.85em}
+  .two{display:flex;gap:4%}.two>div{flex:1}
+  .two h3{color:var(--orange);margin:0 0 .4em;font-size:1.05em}
+  .two ul{margin:0;padding-left:1.2em;font-size:.85em;line-height:1.6}
+  .hint{position:fixed;right:10px;bottom:6px;color:#aaa;font-size:12px}
+  @media print{@page{size:297mm 167mm;margin:0}html,body{background:#fff}.slide{display:block;width:297mm;height:167mm;font-size:15pt;page-break-after:always}.hint{display:none}}
+</style>
+</head>
+<body>
+
+<div class="slide dark" style="padding-top:12vw">
+  <h1 style="font-size:3.4em;color:#fff">Local First Contracts</h1>
+  <p style="max-width:75%;font-size:1.1em;color:#d5e3ea;margin-top:1em">When a data facility comes to the neighborhood, local companies and agencies should see the work first, and everyone should be able to check who got it.</p>
+  <p style="color:var(--orange);font-weight:bold;position:absolute;bottom:5vw">Context: Quantum Shore Chicago, South Side</p>
+</div>
+
+<div class="slide">
+  <h2>The problem: the work and the promises leave the neighborhood</h2>
+  <div class="cards">
+    <div class="card"><h3>Short-lived jobs</h3><p>A typical data center peaks near 1,500 construction workers for 12 to 18 months, then keeps about 50 permanent staff (Virginia JLARC study, as quoted by secondary sources).</p></div>
+    <div class="card"><h3>No local-hire rule</h3><p>The park FAQ (iqmp.org) promises "hundreds" of jobs but publishes no local-hiring commitment, and no investment or power figures.</p></div>
+    <div class="card"><h3>Late, bundled work</h3><p>Local firms likely hear about scopes late and cannot bid on large bundled contracts. This is our assumption, to be validated with local firms.</p></div>
+  </div>
+  <div class="foot">Sources: Virginia JLARC via Data Center Knowledge / Lightcast; iqmp.org FAQ. Verify originals before citing.</div>
+</div>
+
+<div class="slide">
+  <h2>Solution: a five-step local-first contracting loop</h2>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><b>Publish</b><span>Developer posts scopes in small lots</span></div>
+    <div class="step"><div class="num">2</div><b>Verify</b><span>Business proves it is local</span></div>
+    <div class="step"><div class="num">3</div><b>Local-first window</b><span>Verified local bidders go first</span></div>
+    <div class="step"><div class="num">4</div><b>Award</b><span>Winner and amount are published</span></div>
+    <div class="step"><div class="num">5</div><b>Track</b><span>Local share promised vs. actual</span></div>
+  </div>
+  <p style="margin-top:2em;color:var(--mut);font-style:italic;font-size:.9em">Conceptual framework. Step 5 feeds the next round: results set the next local-share target.</p>
+</div>
+
+<div class="slide">
+  <h2>Who it serves and who pays</h2>
+  <div class="cards">
+    <div class="card"><h3>Users (free)</h3><p>Local companies, community organizations and local agencies near the facility: small contractors, security, landscaping, catering, trades training providers.</p><p>Goal: see opportunities early and bid.</p></div>
+    <div class="card d"><h3>Payer: the developer</h3><p>Pays a yearly fee per project for posting, verification, local-first windows and compliance reports it can show the city and community. Start-up phase backed by grants.</p><p>Governance: independent non-profit; awards are public; payment buys service, not outcomes.</p></div>
+  </div>
+  <div class="foot">Model is a hypothesis: no developer has agreed to pay. Pricing is untested. Validate before the pitch claims otherwise.</div>
+</div>
+
+<div class="slide">
+  <h2>Market size and competitors</h2>
+  <div class="cards">
+    <div class="card"><h3>Market size</h3><p>Beachhead: one reported $9B South Side project (Chicago 312 headline).</p><p>To size: number of large data center and industrial projects × local-eligible contract value × platform fee.</p><p>No market figure yet: do not quote one.</p></div>
+    <div class="card"><h3>Competitors (to verify)</h3><p>Construction bid platforms such as Procore and BuildingConnected.</p><p>Government supplier-diversity and certification programs.</p><p>Our difference: local-first window plus public tracking of promised vs. actual local share.</p></div>
+  </div>
+  <div class="foot">Competitor list is from general knowledge, not researched for this project. Verify before presenting.</div>
+</div>
+
+<div class="slide">
+  <h2>Technology framework and demo</h2>
+  <div class="layer"><b style="background:var(--teal)">Front end</b><span>Single-page HTML, CSS and JavaScript; hosted on GitHub Pages</span></div>
+  <div class="layer"><b style="background:var(--dark)">Logic</b><span>ZIP-based eligibility check, local-first window, bid recording, local-share calculation</span></div>
+  <div class="layer"><b style="background:var(--orange)">Data</b><span>Now: illustrative sample data in the browser. Next: database, business registry or certification data, public award data</span></div>
+  <p style="margin-top:1.4em;font-weight:bold;color:var(--dark)">Demo: opportunities list, eligibility check, bid, and transparency ledger (sample data only).</p>
+</div>
+
+<div class="slide dark">
+  <h2>Impact and next steps</h2>
+  <div class="two">
+    <div><h3>Measured by</h3><ul>
+      <li>Local share of awarded value vs. the agreed target</li>
+      <li>Local firms that bid and win</li>
+      <li>Days between a scope posting and local firms seeing it</li>
+      <li>Permanent local jobs created, tracked against promises</li></ul></div>
+    <div><h3>Next steps</h3><ul>
+      <li><b>1–2 weeks:</b> interview local firms and community groups; check existing local-hire and certification rules</li>
+      <li><b>1–3 months:</b> pilot with one developer on one scope; test willingness to pay</li>
+      <li><b>3–6 months:</b> apply for start-up grants; set up independent governance; add back end and real award data</li></ul></div>
+  </div>
+</div>
+
+<div class="hint">← → to navigate · Ctrl+P to save as PDF</div>
+<script>
+const S=[...document.querySelectorAll('.slide')];let i=0;
+const show=n=>{i=Math.max(0,Math.min(S.length-1,n));S.forEach((e,k)=>e.classList.toggle('on',k===i));location.hash=i+1};
+document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key))show(i+1);if(['ArrowLeft','PageUp'].includes(e.key))show(i-1)});
+document.addEventListener('click',e=>show(e.clientX>innerWidth/2?i+1:i-1));
+show((parseInt(location.hash.slice(1))||1)-1);
+</script>
+</body>
+</html>

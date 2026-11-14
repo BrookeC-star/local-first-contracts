@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accountability Loop – South Chicago Quantum Shore</title>
+<style>
+  :root{--bg:#f7f6f2;--ink:#1d2430;--mut:#5b6573;--card:#fff;--line:#dcd9d0;--acc:#1f5f8b;--warn:#a65b00;--bad:#9b2c2c}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  header{background:var(--acc);color:#fff;padding:28px 20px}
+  header h1{margin:0 0 6px;font-size:26px}
+  header p{margin:0;max-width:760px;opacity:.95}
+  main{max-width:960px;margin:0 auto;padding:20px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:18px 0}
+  h2{margin:0 0 4px;font-size:20px}
+  .sub{color:var(--mut);margin:0 0 14px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+  .stat{border:1px solid var(--line);border-radius:8px;padding:12px}
+  .stat b{display:block;font-size:26px;color:var(--acc)}
+  .stat span{font-size:13px;color:var(--mut)}
+  .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}
+  .tag.real{border-color:#2f7d4f;color:#2f7d4f}
+  .tag.demo{border-color:var(--warn);color:var(--warn)}
+  .gap{border-left:4px solid var(--warn);background:#fff8ec;padding:8px 12px;margin:8px 0;font-size:14px}
+  label{display:block;margin:10px 0 4px;font-weight:600;font-size:14px}
+  select,input{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;font-size:15px}
+  button{background:var(--acc);color:#fff;border:0;border-radius:6px;padding:10px 16px;font-size:15px;cursor:pointer;margin:12px 8px 0 0}
+  button.alt{background:#fff;color:var(--acc);border:1px solid var(--acc)}
+  .bar{background:#e9e6dc;border-radius:6px;height:16px;margin:4px 0 10px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--acc)}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+  .st{font-weight:600;color:var(--bad)}
+  .loop{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .loop div{flex:1 1 130px;border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center;font-size:14px;background:#fbfaf6}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}
+  a{color:var(--acc)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Accountability Loop</h1>
+  <p>A long-term, community-owned tracker for the Quantum Shore Chicago development (former U.S. Steel South Works site): measure, publish, discuss, demand, and track responses, every quarter.</p>
+</header>
+<main>
+
+<section id="problem">
+  <h2>The problem</h2>
+  <p class="sub">Residents have no continuous, trusted channel to see facts or turn concerns into binding commitments.</p>
+  <ul>
+    <li>A non-binding referendum on the project was ruled off the March 2026 ballot by the Chicago Board of Elections (petition had more than one question).</li>
+    <li>350+ people attended an Aug. 15, 2026 town hall; the mayor left without answering whether he would use his power to stop the project.</li>
+    <li>Whether the planned 1 GW data center on the wider site is cancelled is still unclear: the mayor said no data center, his office said that meant the quantum park only.</li>
+  </ul>
+  <div class="loop">
+    <div><b>1</b><br>Measure</div><div><b>2</b><br>Publish</div><div><b>3</b><br>Discuss</div><div><b>4</b><br>Demand</div><div><b>5</b><br>Track response</div>
+  </div>
+  <p class="sub" style="margin-top:8px">The loop repeats every quarter, so conditions can improve step by step.</p>
+</section>
+
+<section id="facts">
+  <h2>1. What is publicly known</h2>
+  <p class="sub">Sourced from public reporting and the park's own FAQ (iqmp.org). Check each source before citing.</p>
+  <div class="grid">
+    <div class="stat"><b>750</b><span>IBM full-time jobs promised by end of 2030, tied to about $19M in state tax credits (officials, via Block Club, Apr 2026)</span> <span class="tag real">sourced</span></div>
+    <div class="stat"><b>150</b><span>PsiQuantum jobs announced earlier (reported)</span> <span class="tag real">sourced</span></div>
+    <div class="stat"><b>186 / 44 / 27</b><span>soil borings / test pits / groundwater wells in site testing (iqmp.org FAQ)</span> <span class="tag real">sourced</span></div>
+    <div class="stat"><b>30 yrs</b><span>proposed monitoring of the underground barrier wall (iqmp.org FAQ)</span> <span class="tag real">sourced</span></div>
+  </div>
+  <h3 style="margin:16px 0 4px;font-size:16px">What the official pages do not say</h3>
+  <div class="gap">No electricity (MW) or water volume figures are published.</div>
+  <div class="gap">No local-hiring commitment or percentage. Job language is "hundreds" (FAQ) vs. "thousands" (chicagoquantum.org) vs. specific company numbers elsewhere.</div>
+  <div class="gap">No public investment / subsidy totals on the park FAQ.</div>
+  <div class="gap">The word "data center" does not appear on iqmp.org, yet a 1 GW data center was announced by Related Digital in March 2025 for the wider site.</div>
+</section>
+
+<section id="report">
+  <h2>2. Resident report</h2>
+  <p class="sub">Anonymous. Stored only in this browser (prototype). A real version would aggregate by area and protect privacy.</p>
+  <label for="area">Where do you live?</label>
+  <select id="area">
+    <option value="Ward 7">Ward 7</option>
+    <option value="Ward 10">Ward 10</option>
+    <option value="Other nearby">Other nearby</option>
+  </select>
+  <label for="elec">Change in your monthly electric bill over the past year (%)</label>
+  <input id="elec" type="number" placeholder="e.g. 8" step="1">
+  <label for="rent">Change in your monthly rent or housing cost over the past year (%)</label>
+  <input id="rent" type="number" placeholder="e.g. 12" step="1">
+  <button id="submit">Submit report</button>
+  <button class="alt" id="sample">Load DEMO sample data</button>
+  <button class="alt" id="clear">Clear data</button>
+  <p id="msg" class="sub"></p>
+</section>
+
+<section id="dash">
+  <h2>3. Community dashboard</h2>
+  <p class="sub" id="dashnote"></p>
+  <div class="grid">
+    <div class="stat"><b id="n">0</b><span>reports</span></div>
+    <div class="stat"><b id="avgE">–</b><span>average electric bill change</span></div>
+    <div class="stat"><b id="avgR">–</b><span>average housing cost change</span></div>
+  </div>
+  <h3 style="margin:16px 0 4px;font-size:16px">Reports by area</h3>
+  <div id="bars"></div>
+</section>
+
+<section id="demands">
+  <h2>4. Demands and responses</h2>
+  <p class="sub">Demands are those publicly stated by Southside Together (Aug 2026). Status shows only what we found publicly; "No public response found" is not a finding that none exists.</p>
+  <table>
+    <thead><tr><th>Demand</th><th>Directed to</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Revoke existing permits</td><td>Mayor</td><td class="st">No public response found</td></tr>
+      <tr><td>Withhold future permits</td><td>Mayor</td><td class="st">No public response found</td></tr>
+      <tr><td>End the City Council-approved tax rebate</td><td>City Council</td><td class="st">No public response found</td></tr>
+      <tr><td>Withdraw the city's $5M commitment</td><td>Mayor / Council</td><td class="st">No public response found</td></tr>
+      <tr><td>Clarify whether the 1 GW data center is cancelled (resident question)</td><td>Related Digital / Mayor</td><td class="st">Unresolved: mayor's office said "quantum park only"</td></tr>
+    </tbody>
+  </table>
+  <p class="sub" style="margin-top:10px">Next phase: quarterly community meetings produce new demands from this dashboard; each gets a public accepted / partly accepted / rejected response with a deadline, then becomes a binding term in a Community Benefits Agreement.</p>
+</section>
+
+</main>
+<footer>Hackathon prototype. Sourced facts are labelled; sample data is labelled DEMO. See README for the tech and data note.</footer>
+
+<script>
+const KEY='qs_reports_v1';
+const load=()=>JSON.parse(localStorage.getItem(KEY)||'[]');
+const save=a=>localStorage.setItem(KEY,JSON.stringify(a));
+const avg=(a,k)=>a.length?(a.reduce((s,r)=>s+r[k],0)/a.length):null;
+const fmt=v=>v===null?'–':(v>0?'+':'')+v.toFixed(1)+'%';
+function render(){
+  const d=load();
+  const demo=d.some(r=>r.demo);
+  document.getElementById('dashnote').innerHTML=
+    d.length===0?'No reports yet. Submit one above, or load demo sample data.':
+    demo?'<span class="tag demo">DEMO sample data included — not real residents</span>':
+    '<span class="tag">Prototype: data stored in this browser only</span>';
+  document.getElementById('n').textContent=d.length;
+  document.getElementById('avgE').textContent=fmt(avg(d,'elec'));
+  document.getElementById('avgR').textContent=fmt(avg(d,'rent'));
+  const areas=['Ward 7','Ward 10','Other nearby'];
+  const max=Math.max(1,...areas.map(a=>d.filter(r=>r.area===a).length));
+  document.getElementById('bars').innerHTML=areas.map(a=>{
+    const c=d.filter(r=>r.area===a).length;
+    return `<div>${a}: ${c}</div><div class="bar"><i style="width:${c/max*100}%"></i></div>`;
+  }).join('');
+}
+document.getElementById('submit').onclick=()=>{
+  const elec=parseFloat(document.getElementById('elec').value);
+  const rent=parseFloat(document.getElementById('rent').value);
+  const msg=document.getElementById('msg');
+  if(isNaN(elec)||isNaN(rent)){msg.textContent='Please enter both numbers.';return;}
+  const d=load();d.push({area:document.getElementById('area').value,elec,rent,demo:false});save(d);
+  msg.textContent='Thank you. Your report was added.';
+  document.getElementById('elec').value='';document.getElementById('rent').value='';
+  render();
+};
+document.getElementById('sample').onclick=()=>{
+  const d=load().filter(r=>!r.demo);
+  const s=[['Ward 7',9,14],['Ward 7',6,11],['Ward 7',12,18],['Ward 10',5,8],['Ward 10',7,10],['Other nearby',3,5],['Other nearby',4,6]];
+  s.forEach(x=>d.push({area:x[0],elec:x[1],rent:x[2],demo:true}));
+  save(d);render();
+};
+document.getElementById('clear').onclick=()=>{save([]);render();};
+render();
+</script>
+</body>
+</html>
